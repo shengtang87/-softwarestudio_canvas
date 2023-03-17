@@ -1,0 +1,128 @@
+body {
+    background-image: url("src/bg.jpg");
+  }
+
+#mycan{
+    position:fixed;
+    top:0px;
+    left:400px;
+    border:3px solid;
+    border-color: #107c0f;
+    cursor:url('src/pen.png'), default;
+}
+  
+.container{
+  top:0px;
+  left:0px;
+  position: relative;
+  height: 800px;
+  width: 400px;
+  display:inline-block;  ;
+  object-fit:cover;
+}
+.container>img{
+  top:0px;
+  left:0px;
+  position: relative;
+  height: 800px;
+  width: 400px;
+  display:inline-block;  ;
+  object-fit:cover;
+}
+
+
+input[type="checkbox"]{
+    display: none;
+}
+
+
+div label{
+  top: 0px;
+  left: 0px;
+    border: 1px solid #fff;
+    padding: 10px;
+    display:inline-block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    content: " ";
+}
+tool label:hover{
+    border: 1px solid #fff;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    /* margin: 10px; */
+    cursor: pointer;
+    content: " ";
+    background-color : #ddd;
+}
+
+tool button{
+    border: 1px solid #fff;
+    background-color:  transparent;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    /* margin: 10px; */
+    cursor: pointer;
+    content: " ";
+}
+tool button:hover{
+    border: 0;
+    background-color: #ddd;
+    cursor: pointer;
+}
+tool input[type=file]{
+    display: none;
+    border: 0;
+    cursor: pointer;
+}
+tool input:hover{
+    border: 0;
+    color: gray;
+    cursor: pointer;
+}
+
+
+  tool  label img {
+    height: 50px;
+    width: 50px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+  }
+  
+  tool input:checked + label {
+    background-color:#eee;
+  }
+  
+  
+  :checked + label img {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px #333;
+    z-index: -1;
+  }
+
+
+/* label {
+    padding: 0;
+    margin-right: 3px;
+    cursor: pointer;
+}
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox]+span {
+    position: relative ;
+    background-color: #aaa;
+    padding: 3px 6px;
+    border: 1px solid gray;
+    color: #444;
+    user-select: none;
+}
+input[type=checkbox]:checked+span {
+    position: relative ;
+    display: inline-block;
+    color: yellow;
+    background-color: #444;
+}  */
